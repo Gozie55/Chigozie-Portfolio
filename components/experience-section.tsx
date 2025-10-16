@@ -34,8 +34,9 @@ const experiences = [
     title: "Software Engineer Intern",
     company: "Erina Technologies",
     period: "Aug 2023 - June, 2024",
+    
     responsibilities: [
-  "Assisted in building web pages and simple applications using React and Spring Boot.",
+  "Assisted in building web pages and simple applications using React and Java Spring Boot.",
   "Helped create and test REST APIs for basic data operations.",
   "Worked with the frontend team to make responsive and user-friendly designs.",
   "Fixed bugs and improved existing features based on team feedback.",

@@ -1,4 +1,4 @@
-// import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 // import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
@@ -10,15 +10,19 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* <Navbar /> */}
-      <HeroSection />
+    <main className="min-h-screen overflow-x-hidden">
+
+      <Navbar />
+      
+      <div className="pt-16 overflow-x-hidden">
+        {/* <HeroSection /> */}
       {/* <AboutSection /> */}
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       <ProjectsSection />
       <ExperienceSection />
       {/* <TestimonialsSection /> */}
       <ContactSection />
+      </div>
       <Footer />
     </main>
   )
