@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       
       <div className="pt-16 overflow-x-hidden">
-        {/* <HeroSection /> */}
+        <HeroSection />
       {/* <AboutSection /> */}
       <SkillsSection />
       <ProjectsSection />
