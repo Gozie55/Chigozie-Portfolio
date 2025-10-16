@@ -94,20 +94,11 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.5, type: "spring" }}
-            viewport={{ once: true }}
-            className="inline-block mb-4"
-          >
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
-              Technical Expertise
-            </span>
-          </motion.div>
+          
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Skills & Technologies
           </h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-6" />
           
         </motion.div>
 
