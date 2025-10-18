@@ -13,7 +13,7 @@ import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Gozie55", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/chigozie-iwuji", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://linkedin.com/in/chigo-iwuji", label: "LinkedIn" },
   { icon: FaXTwitter, href: "https://x.com/uzomauzo5", label: "Twitter" },
   {
     icon: FaWhatsapp,
