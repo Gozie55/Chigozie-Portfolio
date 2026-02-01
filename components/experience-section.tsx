@@ -1,50 +1,52 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Briefcase } from "lucide-react"
-import { motion } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card";
+import { Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company: "BlackSillicon Ltd",
-    period: "June, 2025  - Present",
-      responsibilities: [
-  "Designed and developed scalable backend APIs for Poplar, powering digital product purchases and wallet transactions for over 5,000 users.",
-  "Engineered GrowtechAfrica full-stack platform — including the main website and admin dashboard — enabling seamless course enrollment, payments, and student management.",
-  "Integrated third-party services such as Flutterwave, Monnify, and EKEDC APIs to automate payments and electricity token vending with 99.9% uptime.",
-  "Containerized applications with Docker and orchestrated multi-environment deployments, reducing deployment overhead by 70%.",
-  "Collaborated with cross-functional teams to define system requirements and ensure smooth frontend-backend communication across two independent frontends.",
-],
-
+    title: "Software Developer & Support Engineer",
+    company: "BlackSilicon Ltd, Lagos, Nigeria",
+    period: "June 2023 – Present",
+    responsibilities: [
+      "Architected and implemented a microservices-based backend comprising three independent services, connected through a centralized API Gateway to enable secure routing, service isolation, and cross-service communication.",
+      "Designed and built scalable backend APIs powering digital purchases, utility payments, and wallet transactions for a fintech platform serving over 5,000 active users.",
+      "Implemented an API Gateway layer with request validation, routing, and service abstraction, enabling consistent external APIs while allowing internal services to evolve independently.",
+      "Integrated third-party payment and utility providers including Flutterwave, Monnify, and EKEDC, ensuring high system reliability, transactional integrity, and near-zero downtime.",
+      "Developed a full-stack education and business platform (public website and admin dashboard) supporting payments, course enrollment, user management, and role-based access control.",
+      "Containerized microservices using Docker and orchestrated multi-environment deployments, significantly reducing deployment time and operational overhead.",
+      "Refactored frontend components and backend service boundaries to improve reusability, maintainability, and developer productivity across teams.",
+      "Collaborated closely with product managers and frontend engineers to design stable, well-documented APIs consumed by multiple client applications.",
+    ],
   },
+
   {
-  title: "Java Backend Engineer",
-  company: "JavaPlus Innovations",
-  period: "July, 2024 -  June, 2025",
-  responsibilities: [
-    "Engineered and deployed scalable Spring Boot microservices supporting over 1,000 API requests daily across multiple products.",
-    "Developed RESTful APIs for user onboarding, wallet management, and digital payments, ensuring secure data handling and PCI compliance.",
-    "Integrated third-party financial APIs including Paystack and Flutterwave, reducing payment processing failures by 35%.",
-    
-  ],
-},
+    title: "Java Backend Engineer",
+    company: "JavaPlus Innovations, Lagos Nigeria",
+    period: "July 2021 to April 2023",
+    responsibilities: [
+      "Built and deployed Spring Boot microservices handling thousands of API requests daily across multiple products. ",
+      "Designed secure REST APIs for user onboarding, wallet systems, and payment processing with strong focus on data security and compliance. ",
+      "ntegrated third party payment services including Paystack and Flutterwave, reducing failed transactions and improving payment success rates. ",
+      "Optimized backend performance and improved system stability through better service design and monitoring. ",
+    ],
+  },
 
   {
     title: "Software Engineer Intern",
     company: "Erina Technologies",
-    period: "Aug 2023 - June, 2024",
-    
-    responsibilities: [
-  "Assisted in building web pages and simple applications using React and Java Spring Boot.",
-  "Helped create and test REST APIs for basic data operations.",
-  "Worked with the frontend team to make responsive and user-friendly designs.",
-  "Fixed bugs and improved existing features based on team feedback.",
-  "Learned version control and collaborated using Git and GitHub.",
-],
+    period: "August 2020 to June 2021",
 
+    responsibilities: [
+      "Supported development of web applications using React and Java Spring Boot.",
+      "Assisted in building and testing REST APIs for core application features. ",
+      "Collaborated with designers and senior developers to deliver responsive and user friendly interfaces. ",
+      "Fixed bugs and improved existing features based on team feedback.",
+      "Fixed bugs and improved existing features while learning best practices in version control and team collaboration.",
+    ],
   },
-]
+];
 
 export function ExperienceSection() {
   return (
@@ -57,9 +59,10 @@ export function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Work Experience</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+            Work Experience
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          
         </motion.div>
 
         <div className="relative">
@@ -87,16 +90,27 @@ export function ExperienceSection() {
                           <Briefcase className="h-5 w-5 text-primary md:hidden" />
                           {exp.title}
                         </h3>
-                        <p className="text-primary font-medium">{exp.company}</p>
-                        <p className="text-sm text-muted-foreground">{exp.location}</p>
+                        <p className="text-primary font-medium">
+                          {exp.company}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {exp.location}
+                        </p>
                       </div>
-                      <span className="text-sm text-muted-foreground whitespace-nowrap">{exp.period}</span>
+                      <span className="text-sm text-muted-foreground whitespace-nowrap">
+                        {exp.period}
+                      </span>
                     </div>
                     <ul className="space-y-2">
                       {exp.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="text-muted-foreground text-sm flex gap-2">
+                        <li
+                          key={idx}
+                          className="text-muted-foreground text-sm flex gap-2"
+                        >
                           <span className="text-primary mt-1.5">•</span>
-                          <span className="leading-relaxed">{responsibility}</span>
+                          <span className="leading-relaxed">
+                            {responsibility}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -108,5 +122,5 @@ export function ExperienceSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { FaJava  } from 'react-icons/fa';
+import { FaJava } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
 
 import {
@@ -18,6 +18,8 @@ import {
   SiNestjs,
   SiGit,
   SiDocker,
+  SiExpress,
+  SiNodedotjs,
 } from "react-icons/si";
 
 const skillCategories = [
@@ -35,12 +37,21 @@ const skillCategories = [
   {
     title: "Backend",
     skills: [
+      { name: "Java", icon: FaJava },
+      { name: "Spring Boot", icon: BiLogoSpringBoot },
+      { name: "Node.js", icon: SiNodedotjs },
       { name: "NestJS", icon: SiNestjs },
+      { name: "ExpressJS", icon: SiExpress },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+     
       { name: "MongoDB", icon: SiMongodb },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MySQL", icon: SiMysql },
-      { name: "Java", icon: FaJava },
-      { name: "Spring Boot", icon: BiLogoSpringBoot },
+     
     ],
   },
   {
@@ -94,11 +105,9 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Skills & Technologies
           </h2>
-          
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -152,7 +161,6 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          
           <div className="flex justify-center gap-6 flex-wrap ">
             {[
               SiReact,
@@ -183,7 +191,6 @@ export function SkillsSection() {
                 className="opacity-100 hover:opacity-50 transition-opacity"
               >
                 <Icon className="h-8 w-8 fill-current text-black dark:text-white transition-colors duration-300" />
-
               </motion.div>
             ))}
           </div>

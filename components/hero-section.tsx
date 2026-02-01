@@ -2,18 +2,18 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Github,
-  Linkedin,
-  ArrowDown,
-} from "lucide-react";
+import { Github, Linkedin, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Gozie55", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/chigo-iwuji", label: "LinkedIn" },
+  {
+    icon: Linkedin,
+    href: "https://linkedin.com/in/chigo-iwuji",
+    label: "LinkedIn",
+  },
   { icon: FaXTwitter, href: "https://x.com/uzomauzo5", label: "Twitter" },
   {
     icon: FaWhatsapp,
@@ -23,7 +23,9 @@ const socialLinks = [
 ];
 
 export function HeroSection() {
-  const [dots, setDots] = useState<{ left: string; top: string; delay: number; duration: number }[]>([]);
+  const [dots, setDots] = useState<
+    { left: string; top: string; delay: number; duration: number }[]
+  >([]);
 
   useEffect(() => {
     // Generate random dots only on client
@@ -90,7 +92,11 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
             className="space-y-6 text-center lg:text-left"
           >
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Hi, I'm{" "}
                 <span className="relative inline-block">
@@ -112,11 +118,16 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 text-pretty"
+              className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 text-pretty text-justify"
             >
-              As a software engineer with extensive industry experience, I specialize in building scalable, secure, and
-              user-centered applications. I’ve contributed to projects across fintech, energy, and enterprise solutions,
-              always focusing on delivering measurable results and seamless user experiences.
+              Results driven fullstack software engineer with over five years of
+              experience building, scaling, and maintaining production ready web
+              and backend systems. Strong background in fintech platforms,
+              payment systems, and API driven products used by thousands of
+              users. Experienced in React, Next.js, Java, Spring Boot, Node.js,
+              ExpressJS, and cloud technologies. Passionate about building
+              reliable systems, writing clean code, and delivering software that
+              solves real business problems.
             </motion.p>
 
             <motion.div
@@ -125,10 +136,19 @@ export function HeroSection() {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap justify-center lg:justify-start gap-4"
             >
-              <Button size="lg" onClick={handleContactClick} className="text-base group">
+              <Button
+                size="lg"
+                onClick={handleContactClick}
+                className="text-base group"
+              >
                 Hire Me →
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-base bg-transparent">
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="text-base bg-transparent"
+              >
                 <a href="/resume.pdf" download>
                   Download CV
                 </a>
@@ -171,7 +191,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 clip-hex blur-2xl" />
               <div className="relative w-full h-full clip-hex overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <Image
-                  src="/chigozie.png"
+                  src="/Gozman.jpg"
                   alt="Chigozie - Software Engineer"
                   fill
                   className="object-cover"
@@ -189,7 +209,10 @@ export function HeroSection() {
           transition={{ delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block"
         >
-          <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          >
             <ArrowDown className="h-6 w-6 text-muted-foreground" />
           </motion.div>
         </motion.div>
