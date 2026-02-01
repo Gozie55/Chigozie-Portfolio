@@ -9,11 +9,11 @@ import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Gozie55", label: "GitHub" },
-  {
-    icon: Linkedin,
-    href: "https://linkedin.com/in/chigo-iwuji",
-    label: "LinkedIn",
-  },
+  // {
+  //   icon: Linkedin,
+  //   href: "https://linkedin.com/in/chigo-iwuji",
+  //   label: "LinkedIn",
+  // },
   { icon: FaXTwitter, href: "https://x.com/uzomauzo5", label: "Twitter" },
   {
     icon: FaWhatsapp,
@@ -149,7 +149,7 @@ export function HeroSection() {
                 asChild
                 className="text-base bg-transparent"
               >
-                <a href="/resume.pdf" download>
+                <a href="/Chigozie_Iwuji_Resume.pdf" download>
                   Download CV
                 </a>
               </Button>

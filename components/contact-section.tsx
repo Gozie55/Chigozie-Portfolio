@@ -125,15 +125,15 @@ export function ContactSection() {
                   GitHub
                 </a>
                 <span className="hidden sm:inline text-muted-foreground">•</span>
-                <a
+                {/* <a
                   href="https://linkedin.com/in/chigozie-iwuji"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   LinkedIn
-                </a>
-                <span className="hidden sm:inline text-muted-foreground">•</span>
+                </a> */}
+                {/* <span className="hidden sm:inline text-muted-foreground">•</span> */}
                 <a
                   href="https://x.com/uzomauzo5"
                   target="_blank"
