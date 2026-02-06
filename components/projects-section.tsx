@@ -27,6 +27,21 @@ const projects = [
     },
     demo: "https://growtechafrica.com",
   },
+
+  {
+    title: "Poplar Digital Utilities & Wallet Backend Platform",
+    description:
+      "A robust backend system providing RESTful APIs for purchasing airtime, electricity tokens, and other digital products.",
+    image: "/poplar.png",
+    tech: ["Spring Boot", "PostgreSQL", "Docker", "Flyway"],
+    github: {
+      label: "Private Repository",
+      locked: true, // 🔒 Production fintech system
+      note: "Source code is private due to security and commercial constraints",
+    },
+    demo: "https://poplar-be.blacksillicon.com/swagger-ui/index.html",
+  },
+
   {
     title: "Fintech Payment Gateway UI (Multi-Channel)",
     description:
@@ -67,20 +82,6 @@ const projects = [
       url: "https://github.com/Gozie55/my-finance-app.git",
     },
     demo: "https://my-gozloan-app.netlify.app",
-  },
-
-  {
-    title: "Poplar Digital Utilities & Wallet Backend Platform",
-    description:
-      "A robust backend system providing RESTful APIs for purchasing airtime, electricity tokens, and other digital products.",
-    image: "/poplar.png",
-    tech: ["Spring Boot", "PostgreSQL", "Docker", "Flyway"],
-    github: {
-      label: "Private Repository",
-      locked: true, // 🔒 Production fintech system
-      note: "Source code is private due to security and commercial constraints",
-    },
-    demo: "https://poplar-be.blacksillicon.com/swagger-ui/index.html",
   },
 
   {
