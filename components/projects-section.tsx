@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "GrowTechAfrica",
+    title: "GrowTechAfrica Course Enrollment System",
     description:
       "A full-stack web platform built to advertise technology courses and allow student registrations.",
     image: "/growtechafrica.png",
@@ -42,7 +42,7 @@ const projects = [
   },
 
   {
-    title: "TouchByIfinee",
+    title: "TouchByIfinee Salon Booking & Client Engagement Platform",
     description:
       "A sleek and responsive landing page for a beauty salon designed to highlight services, showcase client reviews, display pricing, and allow customers to book appointments or send inquiries through an interactive contact form.",
     image: "/touchbyifinee.png",
@@ -70,7 +70,7 @@ const projects = [
   },
 
   {
-    title: "Poplar Backend",
+    title: "Poplar Digital Utilities & Wallet Backend Platform",
     description:
       "A robust backend system providing RESTful APIs for purchasing airtime, electricity tokens, and other digital products.",
     image: "/poplar.png",
@@ -80,11 +80,11 @@ const projects = [
       locked: true, // 🔒 Production fintech system
       note: "Source code is private due to security and commercial constraints",
     },
-    demo: "https://poplar-be.blacksillicon.com/actuator/health",
+    demo: "https://poplar-be.blacksillicon.com/swagger-ui/index.html",
   },
 
   {
-    title: "Ipay Wallet Backend",
+    title: "Ipay Core Wallet & Banking Backend System",
     description:
       "A comprehensive banking backend system providing APIs for account creation, KYC verification, and wallet management.",
     image: "/ipaywalletbackend.png",
